@@ -29,7 +29,7 @@
     "addressCountry": "UA"
   },
   "telephone": "+380313121307",
-  "email": "dnz19@mukachevo-rada.gov.ua",
+  "email": "zdo19mukachevo@gmail.com",
   "sameAs": [
     "https://www.instagram.com/zdo19mukachevo/",
     "https://www.facebook.com/profile.php?id=61561790966960&locale=uk_UA"
@@ -776,6 +776,8 @@ html{scroll-behavior:smooth}
 
 
 .team-current{padding:82px 0;background:linear-gradient(180deg,#f8fbf3,#fffdf8)}
+.team-lead{max-width:860px;margin:0 0 28px;color:#65705f;line-height:1.7;font-size:16px}
+
 .team-single{margin-top:30px;max-width:760px}
 .team-person{
   display:flex;align-items:center;gap:22px;background:#fff;border:1px solid rgba(74,157,42,.12);
@@ -2243,6 +2245,16 @@ body::after{
   object-fit:cover!important;
   object-position:center center!important;
 }
+
+/* Final updates: five admission steps and team cards */
+.admission-steps{grid-template-columns:repeat(5,minmax(0,1fr));}
+.admission-card{padding:25px 20px 22px;}
+.team-subtitle{margin:28px 0 16px;color:var(--green-dark);font-size:23px;}
+.team-subtitle-ped{margin-top:34px;}
+.team-people-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+.team-people-grid .team-person{height:100%;align-items:flex-start;}
+@media(max-width:1050px){.admission-steps{grid-template-columns:repeat(2,minmax(0,1fr));}.team-people-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:700px){.admission-steps,.team-people-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -2460,7 +2472,7 @@ body::after{
 <span class="parent-nav-icon">
 <svg fill="none" viewbox="0 0 42 42"><rect height="29" rx="4" stroke="currentColor" stroke-width="2.5" width="22" x="10" y="6"></rect><path d="M15 16h12M15 22h12M15 28h7" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path></svg>
 </span>
-<span class="parent-nav-copy"><b>Правила прийому</b><small>Три прості кроки для зарахування дитини до садочка.</small></span>
+<span class="parent-nav-copy"><b>Правила прийому</b><small>П’ять зрозумілих кроків для зарахування дитини до садочка.</small></span>
 <span class="parent-nav-arrow">→</span>
 </a>
 <a class="parent-nav-card" href="#adaptation">
@@ -2553,76 +2565,13 @@ body::after{
 <div class="container">
 <div class="section-kicker">Правила прийому</div>
 <h2>Як записати дитину до нашого садочка?</h2>
-<p class="admission-lead">Прийом дітей до ЗДО №19 здійснюється завідувачем закладу. Основна комплектація груп раннього та молодшого віку відбувається влітку <strong>(червень – серпень)</strong>, проте до інших вікових груп дитину можна зарахувати протягом усього року <strong>за наявності вільних місць</strong>.</p>
+<p class="admission-lead">П’ять зрозумілих кроків — від перевірки території обслуговування до отримання повідомлення про подальші дії щодо зарахування дитини.</p>
 <div class="admission-steps">
-<article class="admission-card">
-<div class="admission-number">01</div>
-<div class="admission-icon">
-<svg aria-hidden="true" fill="none" viewbox="0 0 64 64">
-<rect height="43" rx="7" stroke="#4a9d2a" stroke-width="3" width="36" x="14" y="11"></rect>
-<path d="M23 24h18M23 33h18M23 42h11" stroke="#4a9d2a" stroke-linecap="round" stroke-width="3"></path>
-<path d="m39 45 5 5 10-12" stroke="#ff6b2c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path>
-</svg>
-</div>
-<div>
-<span class="step-label">КРОК 1</span>
-<h3>Подання заяви</h3>
-<p>Зверніться до методичного кабінету Мукачівської міськради або заповніть електронну форму.</p>
-<a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeq0V6gXLZKUOFoP3TxNTopmKM6mYDOHmuL2px_FPrbOxgKxw/viewform" rel="noopener" target="_blank">Заповнити електронну форму →</a>
-<button aria-expanded="false" class="docs-toggle" type="button">Що взяти із собою <span>＋</span></button>
-<div class="docs-list">
-<ul>
-<li>паспорт батьків;</li>
-<li>свідоцтво про народження дитини;</li>
-<li>ІПН дитини;</li>
-<li>довідку про реєстрацію місця проживання.</li>
-</ul>
-</div>
-</div>
-</article>
-<article class="admission-card">
-<div class="admission-number">02</div>
-<div class="admission-icon">
-<svg aria-hidden="true" fill="none" viewbox="0 0 64 64">
-<path d="M21 13h22a8 8 0 0 1 8 8v15a8 8 0 0 1-8 8H31L20 52l3-8h-2a8 8 0 0 1-8-8V21a8 8 0 0 1 8-8Z" stroke="#ff9b45" stroke-width="3"></path>
-<path d="M24 27h16M24 34h10" stroke="#ff9b45" stroke-linecap="round" stroke-width="3"></path>
-</svg>
-</div>
-<div>
-<span class="step-label">КРОК 2</span>
-<h3>Очікування дзвінка</h3>
-<p>Вашу заяву розглядає виконавчий комітет міської ради. Після ухвалення рішення адміністрація ЗДО №19 зателефонує вам та повідомить про зарахування малюка.</p>
-</div>
-</article>
-<article class="admission-card">
-<div class="admission-number">03</div>
-<div class="admission-icon">
-<svg aria-hidden="true" fill="none" viewbox="0 0 64 64">
-<path d="M11 29 32 12l21 17v24H11V29Z" stroke="#4a9d2a" stroke-linejoin="round" stroke-width="3"></path>
-<path d="M25 53V36h14v17" stroke="#ff6b2c" stroke-width="3"></path>
-<path d="M20 29h24" stroke="#ffc43d" stroke-linecap="round" stroke-width="3"></path>
-</svg>
-</div>
-<div>
-<span class="step-label">КРОК 3</span>
-<h3>Оформлення в садок</h3>
-<p>Після повідомлення про зарахування підготуйте документи для оформлення дитини в садок.</p>
-<button aria-expanded="false" class="docs-toggle" type="button">Перелік документів <span>＋</span></button>
-<div class="docs-list">
-<ul>
-<li>медична картка (ф. № 026/о);</li>
-<li>довідка про епідоточення;</li>
-<li>копія свідоцтва про народження;</li>
-<li>довідка про реєстрацію;</li>
-<li>картонна папка для справи.</li>
-</ul>
-</div>
-</div>
-</article>
-</div>
-<div class="admission-note">
-<svg aria-hidden="true" fill="none" viewbox="0 0 48 48"><circle cx="24" cy="24" r="19" stroke="#4a9d2a" stroke-width="2.5"></circle><path d="M24 21v12M24 15.5v.5" stroke="#4a9d2a" stroke-linecap="round" stroke-width="3"></path></svg>
-<p><strong>Важливо:</strong> зарахування до інших вікових груп протягом року можливе за наявності вільних місць.</p>
+<article class="admission-card"><div class="admission-number">01</div><div><span class="step-label">КРОК 1</span><h3>Перевірте територію обслуговування</h3><p>Перевірте, чи входить ваша адреса до території обслуговування Мукачівського ЗДО №19. Для зручності скористайтеся пошуком за назвою вулиці.</p><a class="form-button" href="#territorySearch">Перевірити свою адресу →</a></div></article>
+<article class="admission-card"><div class="admission-number">02</div><div><span class="step-label">КРОК 2</span><h3>Підготуйте документи</h3><p>Підготуйте фото або електронні копії необхідних документів.</p><button aria-expanded="false" class="docs-toggle" type="button">Перелік документів <span>＋</span></button><div class="docs-list"><ul><li>свідоцтва про народження або документа, що посвідчує особу дитини;</li><li>ідентифікаційного коду дитини;</li><li>довідки про місце реєстрації дитини;</li><li>документа, що підтверджує місце проживання дитини, якщо воно відрізняється від місця реєстрації.</li></ul></div></div></article>
+<article class="admission-card"><div class="admission-number">03</div><div><span class="step-label">КРОК 3</span><h3>Зареєструйте дитину</h3><p>Заповніть на сайті та надішліть електронну заявку на реєстрацію дитини.</p><a class="form-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeq0V6gXLZKUOFoP3TxNTopmKM6mYDOHmuL2px_FPrbOxgKxw/viewform" rel="noopener" target="_blank">Електронна реєстрація →</a></div></article>
+<article class="admission-card"><div class="admission-number">04</div><div><span class="step-label">КРОК 4</span><h3>Очікуйте розгляду заявки</h3><p>Ваша заявка буде розглянута впродовж <strong>5 робочих днів</strong>.</p></div></article>
+<article class="admission-card"><div class="admission-number">05</div><div><span class="step-label">КРОК 5</span><h3>Отримайте сповіщення</h3><p>На вказану вами електронну адресу надійде повідомлення про подальші дії щодо зарахування дитини до ЗДО.</p></div></article>
 </div>
 </div>
 </section>
@@ -2751,6 +2700,8 @@ body::after{
 <div class="group-tags"><span>♡ Дружба</span><span>🌿 Розвиток</span><span>☀ Радість</span></div>
 </div>
 </details>
+<details class="mobile-group-item sonechko"><summary><img alt="Емблема групи Сонечко" loading="lazy" src="images/group-sonechko.webp"/><span class="mobile-group-name">Сонечко</span><span aria-hidden="true" class="mobile-group-chevron">⌄</span></summary><div class="mobile-group-story"><span class="group-story-kicker">Маленький світ нашого садочка</span><h3>Сонечко</h3><p>«Сонечко» — це місце, де кожен день починається з тепла, усмішок і маленьких відкриттів. Тут діти вчаться дружити, пізнають світ, розкривають свої здібності й дарують одне одному промінчики гарного настрою.</p><div class="group-tags"><span>♡ Дружба</span><span>🌿 Розвиток</span><span>☀ Радість</span></div></div></details>
+<details class="mobile-group-item bdzhilka"><summary><img alt="Емблема групи Бджілка" loading="lazy" src="images/group-bdzhilka.webp"/><span class="mobile-group-name">Бджілка</span><span aria-hidden="true" class="mobile-group-chevron">⌄</span></summary><div class="mobile-group-story"><span class="group-story-kicker">Маленький світ нашого садочка</span><h3>Бджілка</h3><p>У «Бджілці» завжди цікаво й весело, адже маленькі бджілки не сидять на місці. Тут діти граються, творять, досліджують світ, вчаться бути дружною командою та крок за кроком збирають свій «мед» із нових знань і яскравих вражень.</p><div class="group-tags"><span>♡ Дружба</span><span>🌿 Розвиток</span><span>☀ Радість</span></div></div></details>
 </div><div class="group-art-grid">
 <button aria-expanded="false" class="group-art-card cherries" data-group="Cherries" type="button">
 <img alt="Емблема групи Cherries" src="images/image-19.png"/>
@@ -2896,6 +2847,10 @@ body::after{
 <button aria-label="Закрити опис групи Соняшник" class="group-story-close" type="button">×</button>
 </div>
 </div>
+<button aria-expanded="false" class="group-art-card sonechko" data-group="Сонечко" type="button"><img alt="Емблема групи Сонечко" src="images/group-sonechko.webp"/><span class="group-card-arrow">→</span></button>
+<div class="group-story" data-story="Сонечко"><div class="group-story-inner"><img alt="Емблема групи Сонечко" src="images/group-sonechko.webp"/><div><span class="group-story-kicker">Маленький світ нашого садочка</span><h3>Сонечко</h3><p>«Сонечко» — це місце, де кожен день починається з тепла, усмішок і маленьких відкриттів. Тут діти вчаться дружити, пізнають світ, розкривають свої здібності й дарують одне одному промінчики гарного настрою.</p><div class="group-tags"><span>♡ Дружба</span><span>🌿 Розвиток</span><span>☀ Радість</span></div></div><button aria-label="Закрити опис групи Сонечко" class="group-story-close" type="button">×</button></div></div>
+<button aria-expanded="false" class="group-art-card bdzhilka" data-group="Бджілка" type="button"><img alt="Емблема групи Бджілка" src="images/group-bdzhilka.webp"/><span class="group-card-arrow">→</span></button>
+<div class="group-story" data-story="Бджілка"><div class="group-story-inner"><img alt="Емблема групи Бджілка" src="images/group-bdzhilka.webp"/><div><span class="group-story-kicker">Маленький світ нашого садочка</span><h3>Бджілка</h3><p>У «Бджілці» завжди цікаво й весело, адже маленькі бджілки не сидять на місці. Тут діти граються, творять, досліджують світ, вчаться бути дружною командою та крок за кроком збирають свій «мед» із нових знань і яскравих вражень.</p><div class="group-tags"><span>♡ Дружба</span><span>🌿 Розвиток</span><span>☀ Радість</span></div></div><button aria-label="Закрити опис групи Бджілка" class="group-story-close" type="button">×</button></div></div>
 </div>
 </div>
 </section>
@@ -2903,27 +2858,11 @@ body::after{
 <svg aria-hidden="true" focusable="false" preserveaspectratio="none" viewbox="0 0 1440 110">
 <path d="M0,46 C190,10 390,88 650,42 C910,-1 1160,86 1440,34 L1440,110 L0,110 Z" fill="#fbf7ef"></path>
 </svg>
-</div><section class="team team-current" id="team">
-<div class="container">
-<div class="section-kicker">Наш колектив</div>
-<h2>Знайомтеся — наша команда</h2>
-<div class="team-single">
-<div class="team-person">
-<div aria-hidden="true" class="team-person-mark">
-<svg fill="none" viewbox="0 0 64 64">
-<circle cx="32" cy="23" r="10" stroke="#4a9d2a" stroke-width="3"></circle>
-<path d="M14 53c2-13 9-19 18-19s16 6 18 19" stroke="#4a9d2a" stroke-linecap="round" stroke-width="3"></path>
-<path d="M45 15c3-5 10-3 10 2 0 5-10 10-10 10s-10-5-10-10c0-5 7-7 10-2Z" stroke="#ff9b45" stroke-linejoin="round" stroke-width="2.5"></path>
-</svg>
-</div>
-<div class="team-person-copy">
-<h3>Гріцу Ксенія Габорівна</h3>
-<p>Завідувач Мукачівського ЗДО №19</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+</div><section class="team team-current" id="team"><div class="container"><div class="section-kicker">Наш колектив</div><h2>Знайомтеся — наша команда</h2><p class="team-lead">Колектив Мукачівського ЗДО №19 налічує 58 працівників, які щодня створюють для дітей безпечне, турботливе та розвивальне середовище. З них 28 — педагогічні працівники.</p><h3 class="team-subtitle">Адміністрація</h3><div class="team-people-grid">
+<div class="team-person"><div class="team-person-copy"><h3>Гріцу Ксенія Габорівна</h3><p>Завідувач Мукачівського ЗДО №19</p></div></div>
+<div class="team-person"><div class="team-person-copy"><h3>Васильєва Андріана Геннадівна</h3><p>Заступник директора з організації освітнього процесу</p></div></div>
+<div class="team-person"><div class="team-person-copy"><h3>Фехтел-Шепа Оксана Омелянівна</h3><p>Вихователь-методист</p></div></div>
+</div><h3 class="team-subtitle team-subtitle-ped">Педагогічний колектив</h3><div class="team-people-grid"><div class="team-person"><div class="team-person-copy"><h3>Кабацій Марина Іванівна</h3><p>Практичний психолог</p></div></div></div></div></section>
 <div aria-hidden="true" class="real-wave-divider" data-for="contacts">
 <svg aria-hidden="true" focusable="false" preserveaspectratio="none" viewbox="0 0 1440 110">
 <path d="M0,46 C190,10 390,88 650,42 C910,-1 1160,86 1440,34 L1440,110 L0,110 Z" fill="#f3f8ee"></path>
@@ -2964,7 +2903,7 @@ body::after{
 </svg>
 </div>
 <span>Електронна пошта</span>
-<h3><a href="mailto:dnz19@mukachevo-rada.gov.ua">dnz19@mukachevo-rada.gov.ua</a></h3>
+<h3><a href="mailto:zdo19mukachevo@gmail.com">zdo19mukachevo@gmail.com</a></h3>
 </div>
 <div class="contact-card contact-placeholder">
 <div class="contact-icon">
